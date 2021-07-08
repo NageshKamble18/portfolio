@@ -1,0 +1,381 @@
+
+ html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: repeating-linear-gradient(to bottom, #0f0a1e, #0f0a1e 2px, #140e29 2px, #140e29 4px);
+}
+
+
+nav ul li{
+  list-style: none;
+}
+.nav-links{  
+  margin: 30px;
+  height: 50%;
+}
+
+.nav-links a{
+  color: blueviolet;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover{
+  color: red;
+  letter-spacing: 4px;
+
+}
+
+.cursor{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+}
+
+.cursor2{
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .15s;
+}
+
+.content:hover ~ .cursor{
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #c6c6c6;
+  opacity: .5;
+}
+
+.content:hover ~ .cursor2{
+  opacity: 0;
+}
+
+.blnk-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 90px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 5px;
+  text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+  animation: blink 1s steps(4, start) infinite;
+  margin-top: 280px;
+
+}
+
+div #hiText{
+  margin-top: 80px;
+  font-size: 1.5em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+@-moz-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-o-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#abt-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Press Start 2p','Poppins',serif;
+  padding-top: 120px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 40px;
+  color: #fff;
+  font-size: 1em;
+  
+}
+
+span #hire-btn:active,#dwn-button:active{
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+.main-btn{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span #hire-btn{
+  text-align: center;
+  font-family:'Press Start 2p', 'Poppins', sans-serif ;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  cursor: pointer;
+  height: 50px;
+  width: 180px;
+  margin: 10px;
+  border-radius: 7px;
+  box-shadow: 0 .2em gray;
+  padding: 10px 0 10px 10px ; 
+  font-weight: bold;
+  padding: 10px 0 10px 10px ;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+}
+
+#dwn-button{
+  text-align: center;
+  font-family:'Press Start 2p', 'Poppins', sans-serif ;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  cursor: pointer;
+  height: 28px;
+  width: 180px;
+  margin: 5px;
+  border-radius: 7px;
+  box-shadow: 0 .2em gray;
+  padding: 10px 0 10px 10px ; 
+  font-weight: bold;
+  padding: 10px 0 10px 10px ;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+}
+
+
+div h3,#skl-text{
+  color: #fff;
+  text-decoration: underline;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+#skl-set{
+  margin-right: 80px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+#skl-set li{
+  margin-left: 40px;
+  margin-right: 50px;
+  list-style-type: none;
+}
+
+
+.main{
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.mail-img{
+  display: none;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 40%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+
+  }
+}
+@media (min-width: 360px) {
+  .cards_item {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: #fff;
+}
+
+.card_title {
+  color: #140e29;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  font-family: 'Poppins';
+  color: #140e29;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 800;
+}
+
+.card_text ul{
+  font-size: medium;
+}
+
+
+
+footer{
+  padding: 20px;
+  padding-left: 180px;
+  border: 20px solid #fff;
+  color: #fff;
+  font-family: 'Poppins''Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  line-height: 2.5rem;
+  font-size: 1rem;
+
+}
+
+.post-card_image{
+  height: 150px;
+  max-width: 510;
+  vertical-align: middle;
+}
+
+
+.social-links img {
+  height: 3rem;
+  width: 3rem;
+  margin: 1rem 1rem;
+  border-radius: 30%;
+  transition: background .3s ease-in-out;
+}
+#map{
+  padding: .5rem;
+  margin: .5rem;
+}
+
+footer a
+{
+  word-break: keep-all;}
+
+  @media screen and (max-width: 480px) and (min-width: 0px)
+   {
+    .cards{
+      display: block;
+    }
+    .main{
+      width: 100%;
+    }
+    
+    p#abt-text{
+      padding-top: 40px;
+      font-size: .7rem;
+      width: 250px;
+      padding-left: 0px;
+      margin-left:  30px;
+      margin-right:  30px;
+      margin-top: 100px;
+    } 
+
+    div#hi-text{
+      margin-top: 50px;
+      margin-bottom: 150px;
+    } 
+
+    ul#skl-set{
+      font-size: .7rem;
+      width: 100%;
+      padding-left: 0px;
+    }
+
+    .map{
+      height: 50px;
+      width: 50px;
+    }
+    footer,a.email, .foot-note, div.social-links{
+      font-size: xx-small;
+    }
+    .img{
+      height: 5px;
+    }
+
+    .cards_item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+  }
