@@ -360,9 +360,9 @@ footer a
       padding-left: 0px;
     }
 
-    .map{
-      height: 50px;
-      width: 50px;
+    #map{
+      height: auto;
+      width: auto;
     }
     footer,a.email, .foot-note, div.social-links{
       font-size: xx-small;
@@ -377,17 +377,12 @@ footer a
       align-items: center;
       flex-wrap: wrap;
     }
+    #abt-text,#skl-set{
+      line-height: 1.4rem;
+    }
+    footer{
+      width: 310px;
+
+    }
 
   }
-
-
-@media only screen and (max-width: 600px) {
-  #map{
-	  width: auto;
-	  height: auto;
-	}
-	.main{
-	  width: auto;
-	  height: auto;
-	}
-}
