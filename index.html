@@ -4,17 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nagesh Portolio</title>
+    <title>Nagesh Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
   <div id="cursor">
@@ -68,6 +63,11 @@
     </span>
     <!-- Midlle Section Ends-->
     <br><br><br>
+    <br><br><br>
+<div class="mario-holder">
+	<div class="mario framethree"></div>
+</div>
+
     <hr>
     <!-- Services Section starts-->
 
@@ -201,6 +201,50 @@
       document.addEventListener("mousemove",function(e){
         cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
       });
+
+      (function(global) {
+
+window.addEventListener("DOMContentLoaded", startApp);
+function startApp() {
+
+  var app = new MarioAnimation();
+  window.removeEventListener("DOMContentLoaded", startApp);
+}
+
+})(window);
+
+
+MarioAnimation = (function() {
+
+var self;
+
+var state = 0;
+var fps = 6;
+
+  function MarioAnimation(){
+    self = this;
+    setTimeout(changeClass, 1000/fps);
+  }
+
+var changeClass = function(){
+    state++;
+    state = state % 4;
+    if(state == 0){
+      document.getElementsByClassName("mario")[0].className = "mario framezero"
+    } else if(state == 1){
+      document.getElementsByClassName("mario")[0].className = "mario frameone"
+    } else if(state == 2){
+      document.getElementsByClassName("mario")[0].className = "mario framethree"
+    } else {
+      document.getElementsByClassName("mario")[0].className = "mario frameone"
+    }
+
+    setTimeout(changeClass, 1000/fps);
+}
+
+return MarioAnimation;
+
+})(window);
     </script>
 </body>
 </html>
