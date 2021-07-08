@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Contac</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@ nav ul li{
 }
 
 .contact-form-section{
-    height: 100vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -229,7 +229,23 @@ nav ul li{
     }
 }
 
+@media only screen and (max-width: 600px) {
+  .nav-links,{
+    font-size: large;
+	}
+	.info-container,.contact-form .first-container{
+	  display: none;
+	}
+  .contact-form .second-container{
+    font-size: xx-small;
+    overflow: hidden;
+  }
+  .foot-note{
+    font-size: .8rem;
+  }
+  
 
+}
 #map{
     display: flex;
     align-items: center;
@@ -244,17 +260,9 @@ nav ul li{
     align-items: center;
     justify-content: center; 
     margin-bottom: 20px;
+    
 }
-@media only screen and (max-width: 600px) {
-  .contact-form-section{
-	  width: auto;
-	  height: auto;
-	}
-	.main{
-	  width: auto;
-	  height: auto;
-	}
-}
+
     </style>
   </head>
   <body>
